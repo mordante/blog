@@ -9,14 +9,24 @@
 title: Mordante's blog
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Mainly about coding projects I work on.
+  About C++ projects I work on.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://mordante.github.io"
-#twitter_username: jekyllrb
 github_username:  mordante
+
+tag_page: '/tags/'
+
+permalink: /:year/:month/:day/:title:output_ext
 
 # Build settings
 markdown: kramdown
+#kramdown:
+#  highlighter: rouge
+#  default_lang: c++
+#  syntax_highlighter_opts:
+#    block:
+#      line_numbers: true
+
 
 theme: jekyll-theme-merlot
 
@@ -25,4 +35,3 @@ exclude: [vendor]
 plugins:
   - jekyll-theme-minimal
   - jekyll-theme-merlot
-  - jekyll-theme-dinky
